@@ -16,7 +16,7 @@ if __name__ == "__main__":
     testThread = threading.Thread(target=runTests, args=("serverTest.py",))
     
     serverThread.start()
-    time.sleep(1)
+    time.sleep(5)
     testThread.start()
 
     testThread.join()
