@@ -45,4 +45,5 @@ jobs:
 workflows:
   test_s3_upload:
     jobs:
-      - build_s3_upload
+      - build_s3_upload:
+          context: AWS
