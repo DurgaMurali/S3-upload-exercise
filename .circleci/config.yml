@@ -23,12 +23,12 @@ jobs:
           name: Python dependencies
           command: |
             echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
-            pip install --user -r requirements.txt
+            pip3 install --user -r requirements.txt
       
       - run:
           name: Run automated tests
           command: |
-            python AppTest.py
+            python3 AppTest.py
         
       - store_test_results:
           path: test-reports
