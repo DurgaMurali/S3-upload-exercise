@@ -10,7 +10,7 @@ def client():
     app = Flask(__name__, template_folder='./templates')
     app.config['TESTING'] = True
 
-base_url = 'http://localhost:8090'
+base_url = 'http://0.0.0.0:8090'
 
 def test_index(client):
     response = requests.get(base_url+'/')
