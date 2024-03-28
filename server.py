@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import boto3
 import os
-import signal
 
 app = Flask(__name__, template_folder='./templates')
 
@@ -41,4 +40,4 @@ def upload_file():
 
 if __name__ == '__main__':
     print("In main")
-    app.run(host='0.0.0.0', port=8090)
+    app.run(host='0.0.0.0', port=9000)
